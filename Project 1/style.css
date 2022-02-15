@@ -14,5 +14,33 @@ body {
 }
 
 .container {
-    background-color: black;
+    background-color: cadetblue;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgb(0, 0, 0, 0.3);
+    width: 500px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.form {
+    padding: 75px 80px
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    color: darkslategrey;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-control input {
+    border: 2px solid;
 }
