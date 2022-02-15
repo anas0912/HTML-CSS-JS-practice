@@ -26,7 +26,7 @@ h1 {
 }
 
 .form {
-    padding: 75px 80px
+    padding: 25px 50px
 }
 
 .form-control {
@@ -42,5 +42,15 @@ h1 {
 }
 
 .form-control input {
-    border: 2px solid;
+    border: 2px solid darkgray;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 10px;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: aliceblue;
 }
