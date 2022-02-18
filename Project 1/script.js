@@ -55,7 +55,7 @@ form.addEventListener('submit', function(e) {
         showSuccess(password);
     }
 
-    // check if password is empty
+    // check if confirm password is empty
     if (password2.value === '') {
         showError(password2, 'Confirm Password is required')
     } else {
