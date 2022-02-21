@@ -5,6 +5,7 @@ const email = document.getElementById('email');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
 
+//All Functions
 // Function to update class & message for errors
 
 function showError(input, message) {
@@ -28,12 +29,21 @@ function showSuccess(input) {
     formControl.className = 'form-control success';
 }
 
+
+function isValidEmail(email) {
+    const re =
+        /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    return re.test(String(email));
+}
+
 //Event Listeners
 //create event listener for submit button
 form.addEventListener('submit', function(e) {
     //stop page from reloading
     e.preventDefault();
+
     //Check to see if fields meet required field requirement
+
     // check if username is empty
     if (username.value === '') {
         showError(username, 'Username is required')
@@ -44,6 +54,9 @@ form.addEventListener('submit', function(e) {
     // check if email is empty
     if (email.value === '') {
         showError(email, 'Email is required')
+    } else if (!isValidEmail(email.value)) {
+        showError(email, 'Email is invalid')
+
     } else {
         showSuccess(email);
     }
