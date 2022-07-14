@@ -45,8 +45,23 @@ h1 {
     cursor: pointer;
 }
 
+.controls .fa-stop {
+    color: red;
+    margin-right: 10px;
+}
+
 .controls .fa-play {
     color: green;
+}
+
+.controls .fa-pause {
+    color: whitesmoke;
+}
+
+.controls .timestamp {
+    color: blue;
+    font-weight: bold;
+    margin-left: 20px;
 }
 
 @media(max-width: 800px) {
