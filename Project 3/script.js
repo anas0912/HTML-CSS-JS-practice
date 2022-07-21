@@ -6,4 +6,4 @@ const progress = document.getElementById('progress');
 const timestamp = document.getElementById('timestamp');
 
 // Event Listeners
-// 1.
+// 1. For clicking on the video
