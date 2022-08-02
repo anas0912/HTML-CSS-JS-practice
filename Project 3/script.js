@@ -34,7 +34,7 @@ function updatePlayIcon() {
 //  Create function to update the progress
 
 function updateProgress() {
-    console.log(video.duration);
+    progress.value = (video.currentTime / video.duration) * 100;
 }
 
 // Create function to stop the video
